@@ -19,12 +19,12 @@
 }
 
 .card {
-    height: 375px;
+    height: 380px;
     width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
     border-radius: 5px;
 }
 
@@ -44,7 +44,7 @@
     width: 50%;
     background-color: white;
     padding: 1rem;
-    border-radius: 0 8px 8px 0;
+    border-radius: 0 10px 10px 0;
 }
 
 .pre-title {
@@ -57,6 +57,7 @@
 
 .title {
     font-family: 'Fraunces', serif;
+    width: 100%;
     font-weight: 700;
     font-size: 27px;
     margin-bottom: 17px;
@@ -105,55 +106,70 @@
     margin-right: 3px;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
     
     .container {
         width: 100%;
     }
 
     .card {
+        display: flex;
         flex-direction: column;
         height: 90%;
         width: 80%;
     }
 
     .card-img {
-        height: 300px;
+        height: 250px;
         width: 100%;
     }
 
     .img {
         display: block;
         width: 100%;
-        object-fit: fill;
-        border-radius: 8px 8px 0 0 ;
+        height: 450px;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
     }
 
     .card-info {
-        height: inherit;
-        width: 90%;
+        height: 330px;
+        width: 100%;
         background-color: white;
         padding: 1rem;
-        border-radius: 0 0 8px 8px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .pre-title {
+        font-size: 14px;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
     }
 
     .title {
         font-family: 'Fraunces', serif;
         font-weight: 700;
-        font-size: 29px;
-        margin-bottom: 17px;
+        font-size: 30px;
+        margin-bottom: 12px;
+        text-align: left;
+        word-spacing: 0.05em;
+    }
+
+    .discount {
+        font-size: 30px;
+        font-family: 'Fraunces', serif;
+    }
+    
+    .price {
+        font-family: 'Fraunces', serif;
+        display: inline;
+        text-decoration:line-through;
+        font-size: 12px;
+        color: #4a4949;
+        padding-bottom: 3px;
     }
 
 }
-
-
-
-
-
-
-
-
-
 
 .attribution { 
     font-size: 11px; 
