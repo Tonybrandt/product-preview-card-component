@@ -21,6 +21,7 @@
 .card {
     height: 380px;
     width: 500px;
+    min-width: 303px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,6 +107,14 @@
     margin-right: 3px;
 }
 
+@media screen and (max-width: 375px) {
+
+    .card {
+        min-width: 303px;
+    }
+
+}
+
 @media screen and (max-width: 600px) {
     
     .container {
@@ -170,6 +179,7 @@
     }
 
 }
+
 
 .attribution { 
     font-size: 11px; 
